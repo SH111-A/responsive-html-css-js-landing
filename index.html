@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Responsive Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">MyLogo</div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Service</h1>
+      <p>Delivering excellent solutions to boost your business online.</p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="social-links">
+      <a href="#" aria-label="Facebook">Fb</a>
+      <a href="#" aria-label="Twitter">Tw</a>
+      <a href="#" aria-label="Instagram">Ig</a>
+    </div>
+    <p>&copy; 2025 MyCompany. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>
